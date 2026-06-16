@@ -116,10 +116,10 @@ app.get('/eventos', async (req, res) => {
 });
 
 // Endpoint 3
-app.put('/eventos/aforo', async (req, res) => {
-  const { evento, nuevoAforo } = req.body;
+app.put('/eventos', async (req, res) => {
+  const eventos = req.body.evento;
 
-  const resultado = await modificarAforo(evento, nuevoAforo);
+  const resultado = await modificarAforo(eventos);
 
   if (resultado == null) {
     return res.status(404).json({
