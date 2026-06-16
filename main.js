@@ -24,7 +24,7 @@ async function getEventosDelDia(fecha) {
 }
 
 async function borrarEventosPorLugar(lugar) {
- const {rows}= await client.query("DELETE FROM eventos WHERE lugar = $1",[lugar]);
+ const {rows}= await client.query("DELETE FROM eventos_masivos WHERE lugar = $1",[lugar]);
  if (rows.length < 1) return null;
  return rows;
 }
