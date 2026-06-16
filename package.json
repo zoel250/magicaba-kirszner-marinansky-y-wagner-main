@@ -1,0 +1,13 @@
+{
+  "name": "eventos-masivos",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "espress": "^0.0.0",
+    "express": "^5.2.1",
+    "pg": "^8.13.3"
+  }
+}
